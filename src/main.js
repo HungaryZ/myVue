@@ -4,7 +4,8 @@ import Vue from 'vue'
 // import App from './App'
 import router from './router'
 // import test from './components/views/Test.vue'
-import test2 from './components/views/Test2.vue'
+// import test2 from './components/views/Test2.vue'
+import test3 from './components/views/Test3.vue'
 
 Vue.config.productionTip = false
 
@@ -12,6 +13,6 @@ Vue.config.productionTip = false
 new Vue({
   el: '#app',
   router,
-  components: { test2 },
-  template: '<test2/>'
+  components: { test3 },
+  template: '<test3/>'
 })
