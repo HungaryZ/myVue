@@ -6,7 +6,8 @@ import router from './router'
 // import test from './components/views/Test.vue'
 // import test2 from './components/views/Test2.vue'
 // import test3 from './components/views/Test3.vue'
-import test4 from './components/views/Test4.vue'
+// import test4 from './components/views/Test4.vue'
+import test5 from './components/views/Test5.vue'
 
 Vue.config.productionTip = false
 
@@ -22,6 +23,6 @@ Vue.directive('focus', {
 new Vue({
   el: '#app',
   router,
-  components: { test4 },
-  template: '<test4/>'
+  components: { test5 },
+  template: '<test5/>'
 })
