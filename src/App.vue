@@ -6,14 +6,8 @@
 </template>
 
 <script>
-// 导入组件
-import Hello from './components/Hello.vue'
-
 export default {
-  name: 'App',
-  components: {
-    Hello
-  }
+  name: 'App'
 }
 </script>
 

@@ -1,28 +1,19 @@
 // The Vue build version to load with the `import` command
 // (runtime-only or standalone) has been set in webpack.base.conf with an alias.
 import Vue from 'vue'
-// import App from './App'
+import App from './App'
 import router from './router'
-// import test from './components/views/Test.vue'
-// import test2 from './components/views/Test2.vue'
-// import test3 from './components/views/Test3.vue'
-// import test4 from './components/views/Test4.vue'
-import test5 from './components/views/Test5.vue'
-
+// 引用axios，并设置基础URL为后端服务api地址
+var axios = require('axios')
+axios.defaults.baseURL = 'https://localhost:8443/api'
+// 将api方法绑定到全局
+Vue.prototype.$axios = axios
 Vue.config.productionTip = false
-
-Vue.directive('focus', {
-  inserted (domElem) {
-    domElem.focus()
-  }
-}
-
-)
 
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
   router,
-  components: { test5 },
-  template: '<test5/>'
+  components: { App },
+  template: '<App/>'
 })
